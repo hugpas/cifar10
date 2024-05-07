@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>CIFAR-10 Bildklassifikation</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        #preview {
+            margin-top: 10px;
+        }
+
+        .fett {
+            font-weight: bold;
+        }
+    </style>
+    <script src="script.js" async></script>
+</head>
+
+<body>
+    <div class="container mt-5 p-4 bg-white rounded shadow">
+        <h1 class="text-center">CIFAR-10 Bildklassifikation</h1>
+        <p class="text-center">Implementiert mit der Deep Java Library (DJL)</p>
+
+        <p class="text-center mt-5"><strong>Bitte lade ein Bild zur klassifikation hoch:</strong> (JPEG, PNG, max. 10 MB)</p>
+
+        <form class="d-flex flex-column align-items-center">
+            <div class="form-group">
+                <input type="file" accept="image/png, image/jpeg" class="form-control-file" id="image" name="image">
+            </div>
+            <button type="button" class="btn btn-primary" onclick="triggerAndUpload()">Analysieren</button>
+        </form>
+        
+    </div>
+</body>
+
+</html>
